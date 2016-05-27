@@ -36,11 +36,16 @@
 }
 
 .wrap{
-	max-width: 600px;
-	margin:150px auto;
+    height: inherit;
+    vertical-align: middle;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
 }
 
 .type-wrap {
+    align-self: center;
+    align-content: center;
     text-align: center;
 	margin:10px auto;
 	padding:20px;
@@ -54,4 +59,5 @@
 
 #typed {
     font-size: 5em;
+    text-align: center;
 }
