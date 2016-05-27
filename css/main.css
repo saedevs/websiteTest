@@ -240,8 +240,8 @@ h2 {
 
 #main-slider 
 .carousel-indicators li {
-  background-color:#1B7B98;
-  border: 1px solid #1B7B98;
+  background-color:#ca4242;
+  border: 1px solid #ca4242;
 }
 
 #main-slider 
@@ -754,7 +754,7 @@ h2 {
 }
 
 #footer a:hover {
-  color:#1B7B98
+  color:#ca4242
 }
 
 
