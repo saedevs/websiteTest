@@ -560,8 +560,9 @@ h2 {
   background-repeat:no-repeat;  
   position: relative;
   background-color: #3B3B3B;
-  color: #FFFFFF;
-  opacity: 0.9;
+  color: #ffffff;
+  opacity: 0.89;
+  font-family: sans-serif;
 }
 
 #contact .container {
@@ -571,13 +572,19 @@ h2 {
 #contact h3 {
   font-size: 18px;
   font-weight: bold;
-  letter-spacing: 1px;
+  font-family: sans-serif;
 }
 
 #contact-section h3 {  
   margin-bottom: 25px
 }
-
+#contact h2 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: underline;
+}
 #contact address {
   font-size: 18px;  
   color: white; 
