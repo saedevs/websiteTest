@@ -250,61 +250,27 @@ h2 {
   border: 1px solid #fff;
 }
 
-/*************************
-*******Explore CSS******
-**************************/
-
-#explore {
-  background-color: #C34C39;
-  background-image: url("../images/event-bg.jpg");
-  background-position: center bottom;
-  background-size: contain;
-  background-repeat:no-repeat;
-  position: relative;
-  overflow: hidden;
-  padding: 130px 0 100px;
-}
-
-.watch {
-  position: absolute;
-  left: 0;
-  top: 7%;
-}
-
-#explore h2 {
-  font-size: 42px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#countdown {
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  padding: 0
-}
-
 
  /*************************
 *******Event CSS******
 **************************/
 #event {
-  background-color: #33888F;
+  background-color: #33888E;
   background-image: url("../images/performar-bg.jpg");
   background-position: 50% 0;
   background-size: contain;
   position: relative;
   background-repeat: no-repeat;
+  padding-top: 50px;
 }
 
-.guitar {
+/*.guitar {
   position: absolute;
   right:0;
   top: 0
 }
-
-
-#event h2 {
+*/
+/*#event h2 {
   color: #FFFFFF;
   font-size: 36px;
   font-weight: 300;
@@ -326,12 +292,11 @@ h2 {
   text-transform: uppercase;
 }
 
-
 .single-event h5 {
   font-size: 18px;
   font-weight: 100;
   display: block;
-}
+}*/
 
 #event-carousel {
   position: relative;
@@ -352,35 +317,104 @@ h2 {
 .even-control-right {
   right: 0;
 }
+#event .col-sm-4 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+#event .team-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+#event .team-des {
+  background-color: rgba(00,00,00,0.6);
+  position: absolute;
+  color: #ffffff;
+  opacity: 0;
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*transition: all 0.4s ease-in-out;*/
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#event .team-des:hover {
+ opacity: 1;
+}
+#event img {
+  margin: 0 auto;
+}
 
+#event .social-icon li a {
+  color: #fff;
+}
+
+#event .social-icon li a:hover {
+  color: #00c6d7;
+}
+
+/*************************
+*******Explore CSS******
+**************************/
+
+#explore {
+  background-color: #abcdef;
+  padding-top: 50px;
+}
+#explore h3 {
+  color: #00c6d7;
+  font-size: 14px;
+  font-weight: bold;
+}
+#explore .col-md-3 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#explore img{
+  margin: 0 auto;
+}
 
 /*************************
 *******About CSS**********
 **************************/
 
 #about {
-  background-color: #75B46E;  
+  background-color: #c71f17;  
   position: relative;  
   width: 100%;
   display: flex;
 }
 
-.guitar2 {
+.sae_logo {
   top: 0;
-  width: 50%;
 }
 
-.guitar2 img {
-  padding-top: 3%;
+.sae_logo img {
+  padding: 5%;
+  float: left;
 }
 
 .about-content {
-  width: 50%;
-   background-image: url("../images/about-bg.jpg");
-  background-position: left bottom;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 70px 110px;
+  padding: 5%;
 }
 
 
@@ -404,74 +438,6 @@ h2 {
 #about .btn-primary:hover {
   background-color: #126d55
 }
-
-
-
-/*************************
-******Twitter CSS****
-**************************/
-
-#twitter {
-  background-color: #ecedef;
-  background-image: url("../images/twitter-bg.jpg");
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat:no-repeat;
-  position: relative;
-  padding: 95px 0 90px;
-  overflow: hidden;
-}
-
-.twit {
-  position: absolute;
-  left: 0;
-  top:-42%;
-}
-
-#twitter-feed .item {
-  text-align: center;
-}
-
-#twitter-feed .item img {
-  display: inline-block;
-  width: 78px;
-  height: 78px;
-  border-radius: 50%;
-  background-color: #c5c8ce;
-  padding: 5px;
-  margin-bottom: 30px;
-}
-
-#twitter-feed .item a, 
-#twitter-feed .item p { 
-  font-size: 24px;
-  font-weight: 300;
-  font-family: 'Yanone Kaffeesatz','sans-serif';
-}
-
-#twitter-feed .item p {
-  color: #3D3D3D;
-}
-
-#twitter-feed .item a {
-  color:#00c3ff;
-}
-
-.twitter-control-left, 
-.twitter-control-right {
-  position: absolute;
-  color: #00c3ff;
-  top: 59%;
-  font-size: 24px
-}
-
-.twitter-control-left {
-  left: 0;
-}
-
-.twitter-control-right {
-  right:0;
-} 
 
 
 
@@ -535,19 +501,6 @@ h2 {
 .sponsor-control-right {
   right: 10%
 }
-
-
-/*************************
-******Map CSS****
-**************************/
-#map {
-  position: relative;
-}
-
-#gmap {
-  height:450px;  
-}
-
 
 /*************************
 ******Contact CSS****
@@ -731,14 +684,13 @@ input:focus ~ .highlight {
 
 }
 
-
 /*************************
 ******Footer CSS****
 **************************/
 
 #footer {
-  background-color: #212121;
-  background-image: url("../images/footer-bg.jpg");
+  background-color: #000000;/*
+  background-image: url("../images/footer-bg.jpg");*/
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -746,13 +698,3 @@ input:focus ~ .highlight {
   font-size: 20px;
   padding: 35px 0;
 }
-
-#footer a {
-  color:#f7ab24
-}
-
-#footer a:hover {
-  color:#ca4242
-}
-
-
