@@ -102,7 +102,7 @@ h2 {
 }
 
 .navbar-brand {
-  background-color: #ca4242;
+  background-color: #bb1e17;
   height: 90px;
   margin-bottom: 20px;
   position: relative;
@@ -115,9 +115,9 @@ h2 {
 }
 
 .navbar-right {
-  background-color: #ca4242;
+  background-color: #bb1e17;
   padding:0 95px 0 0;
-  opacity: .9
+  opacity: .8
 }
 
 .navbar-right li a {
@@ -133,12 +133,12 @@ h2 {
 .navbar-right li a:focus,  
 .navbar-right .active a {
   background-color: #fff;
-  color: #16728f
+  color: #383c3d
 }
 
 
 .fixed-menu {
-  background-color: #ca4242;
+  background-color: #bb1e17;
   position: fixed;
   top: 0;
 }
@@ -376,6 +376,7 @@ h2 {
 #explore {
   background-color: #abcdef;
   padding-top: 50px;
+  padding-bottom: 10px;
 }
 #explore h3 {
   color: #00c6d7;
@@ -388,6 +389,57 @@ h2 {
 }
 #explore img{
   margin: 0 auto;
+}
+#explore .col-sm-4 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+#explore .team-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+#explore .team-des {
+  background-color: rgba(00,00,00,0.6);
+  position: absolute;
+  color: #ffffff;
+  opacity: 0;
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*transition: all 0.4s ease-in-out;*/
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#explore .team-des:hover {
+ opacity: 1;
+}
+#explore img {
+  margin: 0 auto;
+}
+
+#explore .social-icon li a {
+  color: #fff;
+}
+
+#explore .social-icon li a:hover {
+  color: #00c6d7;
 }
 
 /*************************
@@ -403,11 +455,13 @@ h2 {
 
 .sae_logo {
   top: 0;
+
 }
 
 .sae_logo img {
   padding: 5%;
   float: left;
+  padding-top: -20px;
 }
 
 .about-content {
@@ -415,6 +469,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5%;
+  padding-left: -10px;
 }
 
 
@@ -507,33 +562,17 @@ h2 {
 **************************/
 
 .contact-section {
-  background-image: url("../images/contact-bg.png");
+  /*background-image: url("../images/contact-bg.jpg");*/
   background-position: absolute;
   background-size: 100%;
   background-repeat:no-repeat;  
   position: relative;
-  background-color: #3B3B3B;
-  color: #FFFFFF;
+  background-color: white;
   opacity: 0.9;
 }
 
-#contact .container {
-  padding-top:47px;
-}
-
-#contact h3 {
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-#contact-section h3 {  
-  margin-bottom: 25px
-}
-
-#contact address {
-  font-size: 18px;  
-  color: white; 
+#contact-section h2 {  
+  font-style: bold;
 }
 
 .contact-text {
@@ -541,52 +580,6 @@ h2 {
   margin-left: 20px;
   display: block;
   color: black;
-}
-
-
-#contact-section input { 
-}
-
-#contact-section .form-control {
-  border :2px solid #fff;
-  box-shadow:none;
-  outline: 0 none;
-  border-radius: 0;
-  color: #797979;
-  font-size: 16px;
-}
-
-#contact-section .form-control:focus {
-  border: 2px solid black;
-  border-radius: 0;
-  box-shadow: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#contact-section input {  
-
-  height: 44px;
-}
-
-#contact-section textarea {
-  height: 90px;
-  resize:none;
-}
-
-#contact-section .btn-primary {
-  background: #00c6d7;
-  border: 3px solid #00c6d7;
-  letter-spacing: 1px;
-  margin-top: 18px;
-  height: 50px;
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-
-#contact-section .btn-primary:hover {
-  color: #000000;
-
 }
 
 .group        { 
@@ -683,14 +676,26 @@ input:focus ~ .highlight {
   to  { width:0; background:transparent; }
 
 }
+input:focus ~ .btn-primary {
+  background: #0067ef;
+  border: 3px solid;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  height: 30px;
+  color: #000000;
+  margin-bottom: 15px;
+}
 
+input:focus ~ .btn-primary:hover {
+  color: #000000;
+
+}
 /*************************
 ******Footer CSS****
 **************************/
 
 #footer {
-  background-color: #000000;/*
-  background-image: url("../images/footer-bg.jpg");*/
+  background-image: url("../images/1.png");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
