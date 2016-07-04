@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Yanone Kaffeesatz', 'sans-serif';
   font-weight: 300;
   text-transform: uppercase;
+  cursor: url("icon.png"), default;
 }
 
 h2 {
@@ -255,49 +256,17 @@ h2 {
 *******Event CSS******
 **************************/
 #event {
-  background-color: #33888E;
   background-image: url("../images/performar-bg.jpg");
-  background-position: 50% 0;
-  background-size: contain;
+  background-position: relative;
   position: relative;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   padding-top: 50px;
 }
 
-/*.guitar {
-  position: absolute;
-  right:0;
-  top: 0
+.eve{
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
-*/
-/*#event h2 {
-  color: #FFFFFF;
-  font-size: 36px;
-  font-weight: 300;
-  margin-bottom: 40px;
-  margin-top: 70px;
-  text-transform: uppercase;
-}
-
-.single-event {
-  margin-bottom: 70px;
-}
-
-.single-event h4 {
-  color: #FFFFFF;
-  font-size: 30px;
-  font-weight: 300;
-  line-height: 26px;
-  margin-top: 25px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.single-event h5 {
-  font-size: 18px;
-  font-weight: 100;
-  display: block;
-}*/
 
 #event-carousel {
   position: relative;
@@ -340,7 +309,7 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  /*transition: all 0.4s ease-in-out;*/
+  transition: all 0.4s ease-in-out;
   margin: 0 auto;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -356,12 +325,20 @@ h2 {
           flex-direction: column;
 }
 #event .team-des:hover {
- opacity: 1;
+ opacity: 0.8;
+ height: 96.5%;
 }
 #event img {
   margin: 0 auto;
 }
 
+.test{
+ padding-bottom: 15px; 
+ }
+ .test1{
+ padding-bottom: 20px; 
+ padding-top: 45px;
+ }
 /*************************
 *******Gallery CSS**********
 **************************/
@@ -376,25 +353,18 @@ h2 {
 **************************/
 
 #team {
-  background-color: #abcdef;
+  background-image: url("../images/team-bg.jpg");
   background-position: 50% 0;
   background-size: contain;
   position: relative;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   padding-top: 50px;
-  padding-bottom: 50px;
-}
-#team h3 {
-  text-align: center;
-  color: #00c6d7;
-  font-size: 20px;
-  font-weight: bold;
+  padding-bottom: 15px;
 }
 #team .col-lg-3 {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-
 }
 #team-carousel {
   position: relative;
@@ -415,45 +385,6 @@ h2 {
 .team-control-right {
   right: 0;
 }
-/*#team .team-wrapper {
-  overflow: hidden;
-  position: relative;
-}
-#team .team-des {
-  background-color: rgba(00,00,00,0.6);
-  position: absolute;
-  color: #ffffff;
-  opacity: 0;
-  max-width: 500px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  vertical-align: middle;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: all 0.4s ease-in-out;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#team .team-des:hover {
- opacity: 1;
-}
-#team img {
-  margin: 0 auto;
-}*/
 
 /*************************
 *******About CSS**********
@@ -561,13 +492,15 @@ h2 {
 **************************/
 
 .contact-section {
-  /*background-image: url("../images/contact-bg.jpg");*/
+  background-image: url("../images/contact-bg.jpg");
   background-position: absolute;
   background-size: 100%;
   background-repeat:no-repeat;  
   position: relative;
   background-color: white;
   opacity: 0.9;
+  padding-top: 40px;
+  padding-bottom: 25px;
 }
 
 #contact-section h2 {  
@@ -579,6 +512,7 @@ h2 {
   margin-left: 20px;
   display: block;
   color: black;
+  font-weight: bold;
 }
 
 .group        { 
