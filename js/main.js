@@ -196,7 +196,3 @@ jQuery(function($) {'use strict',
 
     function foo(){ console.log("Callback"); }
 }());
-
-
-
-
